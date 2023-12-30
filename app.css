@@ -1,0 +1,184 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
+:root {
+    --first-color: #0d6efd;
+    --second-color:#dc3545;
+    --third-color:#fff;
+    --fourth-color:#fd7e14;
+    
+}
+body{
+    background: linear-gradient(to right,var(--second-color),var(--first-color));
+    overflow-x: hidden ;
+}
+nav{
+    background: linear-gradient(to right,var(--second-color),var(--first-color));
+}
+/* header seaction */
+#header{
+    width: 100%;
+    min-height: 500px;
+    position: relative;
+}
+#header video{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    z-index: -2;
+}
+#header .overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    background: linear-gradient(to right,var(--second-color),var(--first-color));
+    mix-blend-mode: overlay;
+    z-index: -1;
+    
+}
+/* header section end */
+/* about section */
+ .about-head{
+    color: var(--fourth-color);
+    text-align: center;
+    font-size: 1rem;
+    
+}
+.about-head2{
+    color: var(--third-color);
+    font-size: 3rem;
+    text-align: center;
+   
+
+}
+.line{
+    width: 150px ;
+    height: 2px;
+    background-color: var(--fourth-color);
+    margin: 30px auto;
+}
+/* about section end */
+/* service section */
+
+#service .card *{
+    color: var(--third-color);
+}
+#service .card img{
+    width: 100%;
+    height: 150px;
+    transition: 0.6s;
+}
+#service .card img:hover {
+    transform: scale(1.2);
+}
+/* Plan section */
+#plan .card{
+    position: relative;
+    overflow: hidden;
+  
+}
+.card1{
+    width: 200px;
+    background-color: #fff;
+    color: black;
+    font-size: 0.9rem;
+    transform: rotate(30deg);
+    position: absolute;
+    right: -50px;
+    top: 20px;
+}
+/* testimonial section */
+#testimonial img {
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+    object-position:50% 20%;
+}
+#testimonial{
+    position: relative;
+}
+#testimonial .carousel-control-prev{
+    position: absolute;
+    left: -8%;
+}
+#testimonial .carousel-control-prev-icon{
+    width: 30px;
+    height: 30px;
+    background-color: #fd7e14;
+    border-radius: 4px;
+}
+#testimonial .carousel-control-next{
+    position: absolute;
+    right: -8%;
+}
+#testimonial .carousel-control-next-icon{
+    width: 30px;
+    height: 30px;
+    background-color: #fd7e14;
+    border-radius: 4px;
+}
+#testimonial .carousel-item i{
+    color: #fd7e14;
+    padding:0 5px;
+} 
+.carousel-indicators button[type="button"]{
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+}
+/* news section */
+#news img{
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    transition: 0.6s;
+}
+#news img:hover {
+    transform: scale(1.04);
+}
+/* faq section  */
+#faq .accordion-button:not(.collapsed){
+    background-color: var(--fourth-color);
+    color: var(--third-color);
+}
+/* contact me  */
+#contact-me {
+    background-image: url(images/boy2.jpg);
+    opacity: 0.7;
+    background-repeat: no-repeat;
+    height: 500px;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* footer secction  */
+#footer ul {
+    list-style-type: none;
+}
+#footer ul li{
+    padding: 10px;
+}
+/* button */
+.uparrow {
+    display: block;
+    color: var(--third-color);
+    width: 40px;
+    height: 50px;
+    background-color: var(--second-color);
+    font-size: 2rem;
+    text-align: center;
+    text-decoration: none;
+    position:fixed;
+    bottom: 5px;
+    right: 5px;
+    border-radius: 4px;
+}
